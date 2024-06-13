@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="card_form" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="160.0" prefWidth="180.0" stylesheets="@../application/cardDesign.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.cardProductControl">
+   <children>
+      <VBox layoutX="65.0" layoutY="-19.0" prefHeight="180.0" prefWidth="190.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="24.0" prefWidth="230.0">
+               <children>
+                  <Label fx:id="prod_name" prefHeight="21.0" prefWidth="90.0" text="Hot Dog">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label fx:id="prod_price" prefHeight="21.0" prefWidth="87.0" text="0 VND">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="170.0">
+               <children>
+                  <ImageView fx:id="prod_imageView" fitHeight="100.0" fitWidth="100.0" layoutX="41.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </AnchorPane>
+            <HBox alignment="CENTER" prefHeight="40.0" prefWidth="170.0">
+               <children>
+                  <TextField fx:id="prod_amounts" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="75.0">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <Button fx:id="prod_addBtn" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#addBtn" prefHeight="25.0" prefWidth="57.0" text="Add" textAlignment="CENTER">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                     <stylesheets>
+                        <URL value="@../application/cardDesign.css" />
+                        <URL value="@../application/loginDesign.css" />
+                     </stylesheets>
+                     <styleClass>
+                        <String fx:value="btn" />
+                        <String fx:value="login-btn" />
+                     </styleClass>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+   <styleClass>
+      <String fx:value="card" />
+      <String fx:value="shadow" />
+   </styleClass>
+</AnchorPane>
